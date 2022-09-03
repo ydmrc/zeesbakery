@@ -1,0 +1,119 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ /* FIRST SECTION */
+
+ #hero {
+     width: 100%;
+     height: 550px;
+
+     background-image: url("../images/cupcake.jpg");
+     background-position: center;
+     background-size: 100%;
+     background-repeat: no-repeat;
+ }
+
+ #hero h1 {
+     font-family: 'Pacifico', sans-serif;
+     font-size: 5em;
+     text-align: center;
+     padding-top: 4%;
+     color: #280904;
+ }
+
+
+ /* MID SECTION */
+
+
+ #mid-section {
+     height: 495px;
+     display: flex;
+     margin-top: 50px;
+
+ }
+
+ .part-section {
+     width: 33.3%;
+
+     text-align: center;
+     font-family: 'Pacifico', sans-serif;
+     font-size: 34px;
+     text-align: center;
+     color: #393E41;
+ }
+
+ #order {
+     background-color: #E7BB41;
+ }
+
+ #order h2 {
+     margin: 4% 0;
+     padding: 0 10%;
+
+ }
+
+ .order-now {
+     font-family: 'Gentium Book Basic', serif;
+     text-decoration: none;
+     color: #393E41;
+ }
+
+ #donut {
+     background-image: url("../images/donut-mid.jpg");
+     background-size: cover;
+     background-position: center top;
+ }
+
+ #waffle {
+     background-image: url("../images/heartwaffle-mid.jpg");
+     background-size: cover;
+     background-position: center;
+ }
+
+ button {
+
+     height: 100px;
+     width: 220px;
+     border-radius: 65px;
+     color: #393E41;
+     background-color: #B7C3F3;
+     font-size: 30px;
+     font-family: 'Gentium Book Basic', serif;
+     font-weight: bold;
+     font-weight: 700;
+ }
+
+ #features {
+     height: 495px;
+     display: flex;
+     margin-top: 50px;
+ }
+
+ /* LAST SECTION */
+
+ .feature {
+     width: 33.3%;
+     text-align: center;
+     font-family: 'Gentium Book Basic', serif;
+     font-size: 34px;
+     text-align: center;
+     color: #393E41;
+     font-weight: 700;
+ }
+
+ .feature-one {
+     ;
+ }
+
+ p {
+     font-size: 25px;
+     color: #529FB9;
+
+ }
+
+ img {
+     width: 100%;
+ }
