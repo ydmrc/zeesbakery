@@ -1,7 +1,23 @@
- * {
+ *,
+ *::before,
+ *::after {
      box-sizing: border-box;
      margin: 0;
      padding: 0;
+ }
+
+ /* Clear fix hack */
+ .clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+ }
+
+ .clear {
+     clear: both;
  }
 
  /* FIRST SECTION */
@@ -117,3 +133,481 @@
  img {
      width: 100%;
  }
+
+ /* Box Model Hack */
+
+
+ /******************************************
+/* BASE STYLES
+/*******************************************/
+
+ html {
+     font-size: 62.5%
+         /* for REM font */
+ }
+
+
+ body {
+     font-family: 'Cinzel Decorative', cursive;
+     margin: 0;
+ }
+
+
+
+
+
+ header {
+     height: 112px;
+     background-color: #E7BB41;
+     color: rgb(0, 0, 0);
+
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+ }
+
+
+ /* HEADER UPPER LEFT : ZEE BAKERY CONTAINER */
+ .headerLeftThird {
+     background-color: #393E41;
+     color: rgb(255, 255, 255);
+
+     height: 112px;
+     /* border: 1px dashed navy; */
+     width: 387px;
+
+     font-size: 4.5rem;
+     font-family: 'Pacifico', cursive;
+
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+
+ /* HEADER UPPER LEFT : SCALLOP DETAILS */
+ .shape {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate (-50%, -50%);
+     background-color: aquamarine;
+ }
+
+ .top,
+ .right,
+ .bottom,
+ .left {
+     background-color: blueviolet;
+     display: inline-block;
+     margin: 10px;
+     border: 1px solid black;
+ }
+
+ .top,
+ .bottom {
+     height: 10px;
+     width: 20px;
+ }
+
+ .right,
+ .left {
+     height: 20px;
+     width: 10px;
+ }
+
+ /* shape-outside: inset(20px 10px 20px 10px round 10px); */
+ /* background:red; */
+
+ .bottom {
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+
+
+
+
+
+ /* HEADER UPPER RIGHT : LINK CONTAINER  */
+ .headerRightThird {
+     background-color: #E7BB41;
+     color: rgb(0, 0, 0);
+
+     /* font-size: 2rem; */
+     font-family: 'Gentium Book Basic', serif;
+
+     display: flex;
+     justify-content: center;
+     flex-grow: 1;
+ }
+
+ .ulLinks {
+     display: flex;
+     justify-content: space-evenly;
+     flex-grow: 1;
+ }
+
+ .headerLinks {
+     background-color: #E7BB41;
+     color: rgb(0, 0, 0);
+
+     /* border: 2px dashed rgb(189, 12, 12);   */
+     /*              */
+     height: 112px;
+     width: 100%;
+
+
+     font-size: 3rem;
+     font-family: 'Gentium Book Basic', serif;
+
+     text-justify: center;
+     text-align: center;
+
+     display: flex;
+     flex-direction: column;
+     /* gap:20px; */
+     justify-content: space-evenly;
+     /* flex:content; */
+     flex-grow: 5;
+ }
+
+
+ /*
+.headerLinks:hover {
+  background-color: #e7bb41;
+  border: 2px dashed #FF595E;
+  border-radius: 4rem;
+}
+*/
+
+ .headerLinks:hover {
+     /* background-color: #E7BB41; */
+     background-color: #ff595f8b;
+
+     /* border: 2px dashed #FF595E; */
+     /* border-radius: 4rem; */
+ }
+
+
+ li {
+     list-style: none;
+     text-decoration: none;
+     /* border: 1px dashed navy; */
+ }
+
+
+ .aLink {
+     list-style: none;
+     text-decoration: none;
+
+     text-align: center;
+     text-justify: center;
+     /* border: 1px dashed navy; */
+ }
+
+
+ .aLink:hover {
+     /* border: 1px dashed navy; */
+     font-size: 3.5rem;
+     font-size: 3.2rem;
+
+     font-family: 'Gentium Book Basic', serif;
+     /* color:#FF595E; */
+     color: #000000;
+     color: #ffffff;
+ }
+
+
+
+
+
+
+
+
+
+ /* TEMPORARY PLACE HOLDER FOR MIDDLE OF THE BODY */
+
+ .tempCentralBody {
+     width: auto;
+     height: 600px;
+     display: flex;
+ }
+
+
+
+
+
+
+
+
+
+ footer {
+     width: auto;
+     height: 211px;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .footerLeft {
+     font-size: 2.5rem;
+     font-family: 'Gentium Book Basic', serif;
+
+     background-color: #393E41;
+     color: rgb(255, 255, 255);
+
+     justify-content: center;
+     display: flex;
+     align-items: center;
+
+     width: 387px;
+
+ }
+
+
+
+ .footerMiddle {
+     font-size: 1rem;
+     font-family: 'Gentium Book Basic', serif;
+
+     background-color: #E7BB41;
+     color: rgb(0, 0, 0);
+     /* border: 2px dashed navy; */
+
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+
+     height: 211px;
+     flex-grow: 1;
+ }
+
+
+ .footerLinks {}
+
+
+
+ .ulSocial {
+     list-style: none;
+     /* border: 1px dashed navy; */
+
+     display: flex;
+     justify-content: space-around;
+
+     align-items: center;
+     width: 100%;
+ }
+
+ .liSocial {
+     list-style: none;
+     /* border: 1px dashed navy; */
+ }
+
+
+ .sCopyRight {
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .pCopyRight {
+     text-justify: center;
+     text-align: center;
+     font-size: 2.0rem;
+
+     align-items: center;
+ }
+
+ .imgSocial {
+     width: 50px;
+     height: 50px;
+ }
+
+
+
+
+ .footerRight {
+     font-size: 1rem;
+     font-family: 'Gentium Book Basic', serif;
+
+     display: flex;
+     width: 387px;
+     justify-content: space-around;
+
+
+     background-color: #393E41;
+     color: rgb(255, 255, 255);
+ }
+
+
+ .liSocialCupCake {
+     list-style: none;
+     /* border: 1px dashed navy; */
+
+     justify-content: center;
+     align-items: center;
+
+     text-justify: center;
+     flex-direction: row;
+     width: 387px;
+ }
+
+ .imgCupCake {
+     color: white;
+     width: 100px;
+     height: 100px;
+
+     filter: invert(100%);
+
+ }
+
+ /* form-section */
+.need-help {
+    height: 900px;
+    padding: 45px 25px;
+    margin: 0;
+    background-image: url("../images/bg1.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .container {
+    height: 761px;
+    max-width: max-content;
+    width:  100%;
+    background: #fff;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding: 25px 30px;
+    border-radius: 105px;
+  }
+  
+  .container .title {
+    padding-left: 35px;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-size: 60px !important;
+    line-height: 105px;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    font-family: Pacifico;
+    color: rgba(255, 5, 13, 0.5);
+    width: 533px;
+    -webkit-text-stroke: 1px #ff595e;
+  }
+  
+  .span-t {
+    padding-left: 35px;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #393E41;
+  }
+  
+  
+  .details {
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000039;
+    padding-top: 45px;
+  }
+  
+  .container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+  }
+  
+  .container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    padding-left: 35px;
+  }
+  
+  form .user-details .input-box-2 {
+    margin-bottom: 15px;
+    width: max-content;
+    padding-left: 35px;
+  }
+  
+  .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    background: #E3E3E3;
+  }
+  
+  .user-details .input-box-2 input {
+    height: 74px;
+    width: 1082px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    background: #E3E3E3;
+  }
+  
+  
+  .user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .user-details .input-box-2 .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .button {
+  padding-left: calc(100% / 2 - 100px); 
+  padding-top: 45px;
+  }
+  
+  .button input{
+    background-color: #ff595e;
+    border-radius: 65px;
+    position: absolute;
+    color: #fff;
+    font-family: 'Gentium Book Basic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 220px;
+    border: 1px solid;
+  }
+
